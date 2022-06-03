@@ -14,39 +14,41 @@
 </head> 
 <body>
     <!--Шапка страници-->
-    <header class="header">
-        <div class="container">
-            <nav class="header-nav">
-            <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
-            <ul class="nav-list list">
-                <li>
-                    <a href="" class="header-link link current">Студия</a>
-                </li>
-                <li>
-                    <a href="./portfolio.html" class="header-link link">Портфолио</a>
-                </li>
-                <li>
-                    <a href="" class="header-link link">Контакты</a>
-                </li>
-            </ul>
+    <header class="header container">
+      <div class="mane-nav">
+            <nav class="header-nav  mane-nav">
+                <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
+                <ul class="nav-list list">
+                    <li class="item">
+                        <a href="./index.html" class="header-link link current">Студия</a>
+                    </li>
+                    <li class="item">
+                        <a href="./portfolio.html" class="header-link link">Портфолио</a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="header-link link">Контакты</a>
+                    </li>
+                </ul>
             </nav>
             <ul class="header-contacts list">
-                <li>
+                <li class="item">
                     <a href="info@devstudio.com" class="contacts-link link">info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </div>
-        
+      </div>
     </header>
     <!--Уникальный контент страници-->
     <main>
         <!--Hero-->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
+                <button type="button" class="hero-button">Заказать услугу</button>
+            </div>
+            
         </section>
        <!--Особенносьти-->
         <section class="section">
@@ -73,10 +75,16 @@
         <!--Чем мы занимаемся--> 
         <section class="section container">
             <h2 class="section-title">Чем мы занимаемся</h2>
-             <ul class="work-list list">
-                <li class="work-item"><img src="./images/img1.jpg" alt="foto" width="370" /></li>
-                <li class="work-item"><img src="./images/img2.jpg" alt="foto" width="370" /></li>
-                <li class="work-item"><img src="./images/img3.jpg" alt="foto" width="370" /></li>
+            <ul class="work-list list">
+                <li class="work-item">
+                    <img src="./images/img1.jpg" alt="foto" width="370" />
+                </li>
+                <li class="work-item">
+                    <img src="./images/img2.jpg" alt="foto" width="370" />
+                </li>
+                <li class="work-item">
+                    <img src="./images/img3.jpg" alt="foto" width="370" />
+                </li>
             </ul>
        </section>
         <!--Наша команда-->
