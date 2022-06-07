@@ -26,6 +26,16 @@ body {
   list-style: none;
 }
 
+.h1..h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.p {
+  margin: 0;
+  padding: 0;
+}
+
 .link {
   text-decoration: none;
 }
@@ -44,7 +54,7 @@ body {
 }
 
 .section {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .container {
@@ -53,13 +63,14 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* -----------heder----------- */
 
 .header {
   background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -100,7 +111,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  /* outline: 2px solid tomato; */
 }
 
 .header-link.current {
@@ -118,6 +128,9 @@ body {
 
 .contacts-link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -136,18 +149,25 @@ body {
 /* hero----------------------------------------- */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: #2f303a;
 }
 
 .hero-title {
-  padding-top: 200px;
+  width: 696px;
   margin-top: 0px;
-  margin-bottom: 40px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  align-items: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -157,7 +177,6 @@ body {
   border: 1px solid transparent;
   padding: 10px 32px;
   min-width: 200px;
-  margin-bottom: 200px;
 
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -177,9 +196,14 @@ body {
   display: flex;
 }
 
-.features-list .item + .item {
+.features-item {
+  width: 270px;
+}
+
+.features-item + .features-item {
   margin-left: 30px;
 }
+
 .features-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -192,6 +216,7 @@ body {
 
 .text {
   margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -201,6 +226,7 @@ body {
 /* ----------Чем мы занимаемся---------- */
 
 .section-title {
+  margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -221,12 +247,19 @@ body {
 /* ----------Наша команда---------- */
 
 .team {
-  padding-top: 94px;
+  margin-top: 94px;
+  background: #f5f4fa;
 }
 
 .team-list {
   display: flex;
   padding-bottom: 94px;
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item + .team-item {
@@ -264,13 +297,19 @@ body {
   color: #ffffff;
 }
 
-.footer > .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.address {
-  padding-top: 20px;
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.info-link {
+  padding: 0px;
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -279,12 +318,16 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.info-link:last-child {
+  margin-bottom: 0;
+}
+
 .address-link {
   color: #ffffff;
 }
 
-.info-list .contacts-link {
-  padding-top: 9px;
+.info-link .contacts-link {
+  padding: 0;
 }
 
 /* портволио------------------------------------- */
@@ -297,8 +340,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 0;
-  margin-bottom: 32px;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
 }
 
 .navigation-list .item + .item {
@@ -307,6 +349,7 @@ body {
 
 .btn-link {
   display: block;
+  padding: 6px 22px;
 
   font-weight: 500;
   font-size: 16px;
@@ -336,6 +379,9 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .direction-item:nth-child(3n) {
@@ -346,19 +392,23 @@ body {
   margin-bottom: 0;
 }
 
-h2 {
-  margin: 20px 0 4px 0;
-  padding: 0 24px;
+.direction-title {
+  padding: 20px 24px;
+}
+
+.direction-name {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
 
-p {
+.direction-text {
   margin: 0;
-  padding: 0 24px;
-  padding-bottom: 20px;
+  padding: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -366,7 +416,8 @@ p {
   color: var(--primary-text-color);
 }
 
-/* img {
+img {
   display: block;
-  margin: 0;
-} */
+  max-width: 100%;
+  height: auto;
+}
